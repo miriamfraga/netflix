@@ -1,0 +1,39 @@
+<h2>{{this.wordAnime}}</h2>
+<div>
+  <ul>
+    <li *ngFor="let film of this.animeFilms" class="wrapper">
+      <img src="{{film.imagen.src}}" alt="{{film.imagen.alt}}" class="imagen">
+      <h3>{{film.tit}}</h3>
+      <p>Género: {{film.gender}}</p>
+   </li>
+  </ul>
+  </div>
+  <h2>{{this.wordAction}}</h2>
+  <div>
+  <ul>
+    <li *ngFor="let film of this.accionFilms" class="wrapper">
+      <img src="{{film.imagen.src}}" alt="{{film.imagen.alt}}" class="imagen">
+      <h3>{{film.tit}}</h3>
+      <p>Género: {{film.gender}}</p>
+   </li>
+  </ul>
+</div>
+<h2>{{this.wordDrama}}</h2>
+<div>
+  <ul>
+    <li *ngFor="let film of this.dramaFilms" class="wrapper">
+      <img src="{{film.imagen.src}}" alt="{{film.imagen.alt}}"class="imagen">
+      <h3>{{film.tit}}</h3>
+      <p>Género: {{film.gender}}</p>
+   </li>
+  </ul>
+</div>
+<div>
+  <ul>
+    <li *ngFor="let film of this.top5" class="imagenTop">
+      <img src="{{film.imagen.src}}" alt="{{film.imagen.alt}}" class="top">
+      <h3>{{film.tit}}</h3>
+      <p>Género: {{film.gender}}</p>
+   </li>
+  </ul>
+  </div>
